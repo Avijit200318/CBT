@@ -17,6 +17,7 @@ html, body{
     height: 100vh;
     background: #FCEF91;
     font-family: sans-serif;
+    overflow: hidden;
 }
 
 header{
@@ -46,32 +47,59 @@ a{
 }
 
 main{
-    padding: 2rem;
     width: 100%;
     height: calc(100vh - 5rem - 5rem);
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
 }
 
-main img{
-    width: 12rem;
-    height: 12rem;
+main .left{
+    position: relative;
+    width: 65%;
+    height: 100%;
+    padding: 2rem 2rem;
+    overflow-y: auto;
 }
 
-#textInfo{
-    font-size: 1.2rem;
-    color: #EA2F14;
-    line-height: 2rem;
-    width: 70%;
+main .right{
+    position: relative;
+    width: 35%;
+    height: 100%;
 }
 
-#textInfo ul{
-    padding: 0 2rem;
+.left h2{
+    font-size: 2.2rem;
+    font-family: "Iceland", sans-serif;
+    margin: 1rem 0
+}
+
+.left h2 ~ h2{
+    margin-top: 3rem;
+}
+
+.left p{
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.left ul{
+    padding-left: 2rem;
+    font-size: 1.1rem;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+}
+
+.right video{
+    width: 100%;
+    object-fit: cover;
 }
 
 footer{
+    position: relative;
     width: 100%;
     height: 5rem;
     border-top: 1px solid #EA2F14;
@@ -80,6 +108,8 @@ footer{
     align-items: center;
     gap: 1rem;
     padding: 1rem 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 10;
 }
 
 footer .left, footer .right{

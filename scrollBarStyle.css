@@ -1,0 +1,25 @@
+/* scroll bar style */
+.scrollbar-custom {
+      scrollbar-width: thin; /* For Firefox */
+      /* scrollbar-color: #000 #888; */
+      scrollbar-color: #7cc25a #ebde83;
+    }
+  
+    .scrollbar-custom::-webkit-scrollbar {
+      width: 10px;
+    }
+  
+    .scrollbar-custom::-webkit-scrollbar-track {
+      background: #888;
+      border-radius: 5px;
+    }
+  
+    .scrollbar-custom::-webkit-scrollbar-thumb {
+      background: #000;
+      border-radius: 5px;
+    }
+  
+    .scrollbar-custom::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+/* end */

@@ -5,14 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../scrollBarStyle.css">
     <title>The JavaScript DSA Lab</title>
 </head>
 <body>
     <header>
-        <h1>Chapter 1</h1>
+        <h1>Chapter 1: Memory Basics</h1>
     </header>
     <main>
+        <div class="left scrollbar-custom">
+            <div>
+                <h2>What are Variables?</h2>
+                <p>Variables are digital storage boxes used to reserve a specific spot in the computer's memory for data. In JavaScript, choosing the right container is essential for system stability:</p>
+                <ul>
+                    <li><strong>let:</strong> Used for information that needs to change or update, such as a mission score or a timer.</li>
+                    <li><strong>const:</strong> Used for information that must stay the same, such as a unique ID or a fixed mathematical constant.</li>
+                </ul>
         
+                <h2>Identifying Data Types</h2>
+                <p>Data in JavaScript comes in different "shapes" or types. Each type tells the computer how to treat the information:</p>
+                <ul>
+                    <li><strong>Strings:</strong> Used for text-based data (e.g., "Agent_007" or "System Online").</li>
+                    <li><strong>Numbers:</strong> Used for all mathematical values, counting, or calculating durations (e.g., 25 or 3.14).</li>
+                    <li><strong>Booleans:</strong> Used for simple logic gates—True or False—to determine if a mission is active or a task is complete.</li>            
+                </ul>
+    
+                <h2>The "Var" Legacy (Historical Context)</h2>
+                <p><strong>Var:</strong> Before <strong>let</strong> and <strong>const</strong>, JavaScript used <strong>var</strong>. In modern coding, we avoid it because it is "function-scoped," which can lead to memory leaks and unpredictable bugs in complex algorithms. Sticking to let and const is the first step in writing secure code.</p>
+    
+                <h2>Dynamic Typing</h2>
+                <p><strong>Flexible Containers:</strong> Unlike some languages where a "Number box" can only ever hold numbers, JavaScript is dynamically typed. This means a variable created as a String can be reassigned to hold a Number. While flexible, a good developer keeps data types consistent to prevent system crashes.</p>
+                
+                <h2>Type Checking (The typeof Operator)</h2>
+                <p><strong>System Diagnostics:</strong> To ensure your mission logic is sound, you can use the typeof command. It acts like a scanner that tells the computer exactly what kind of data is inside a "storage box" before you try to process it.</p>
+            </div>
+        </div>
+        <div class="right">
+            <video src="../assets/videos/chapter 1.mp4" controls poster="../assets/js variable poster.jfif"></video>
+        </div>
     </main>
     <footer>
         <div class="left">
@@ -37,6 +67,12 @@
     </footer>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js" integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+    integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollSmoother.min.js"></script>
 
 <script src="./index.js"></script>
 </html>
