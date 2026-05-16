@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../scrollBarStyle.css">
+    <title>The JavaScript DSA Lab</title>
+</head>
+<body>
+    <header>
+        <h1>Live Practice</h1>
+    </header>
+    <main>
+        <div class="scrollbar-custom">
+            <div class="left">
+                <h2>Variables Related Problem</h2>
+                <ul>
+                    <li>Declare a constant named <strong>systemID</strong> and set it to the string <strong>"TECH-99"</strong>.</li>
+                    <li>Declare a let variable named <strong>accessCount</strong> and set it to the number <strong>0</strong>.</li>
+                    <li>Declare a const variable named <strong>isAdmin</strong> and set it to a boolean value <strong>true</strong>.</li>
+                    <li>Use <strong>console.log()</strong> and the typeof operator to print the data type of <strong>systemID</strong></li>
+                    <li>Use <strong>console.log()</strong> and the typeof operator to print the data type of <strong>accessCount</strong>.</li>
+                    <li>Use <strong>console.log()</strong> and the typeof operator to print the data type of <strong>isAdmin</strong>.</li>
+                </ul>
+            </div>
+            <div class="right">
+                <div id="rightHead">
+                    <div>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                    </div>
+                    <button id="runBtn"><i class="fa-solid fa-play"></i> Run</button>
+                </div>
+                <textarea spellcheck="false" id="codeInput" placeholder="Write Your Code Here..."></textarea>
+                <div class="output">
+                    <h3 class="head"><i class="fa-solid fa-terminal"></i> Code Output</h3>
+                    <pre id="showOutput">Your output will appear here...</pre>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="left">
+            <a href="/index.html">
+                <button><i class="fa-regular fa-house"></i></button>
+            </a>
+            <button><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="mid">
+            <div id="pageNo">
+                <p>4 / 20</p>
+            </div>
+        </div>
+        <div class="right">
+            <a href="../index.html">
+                <button><i class="fa-regular fa-circle-left"></i></button>
+            </a>
+            <a href="../target audience/index.html">
+                <button><i class="fa-regular fa-circle-right"></i></button>
+            </a>
+        </div>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js" integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+    integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollSmoother.min.js"></script>
+
+<script src="./index.js"></script>
+</html>

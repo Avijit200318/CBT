@@ -112,7 +112,8 @@ main h3, main h4{
     position: relative;
     font-family: "Iceland", sans-serif;
     font-size: 1.7rem;
-    color: #FB9E3A;
+    /* color: #FB9E3A; */
+    color: #EA2F14;
     font-weight: 500;
     z-index: 1;
 }

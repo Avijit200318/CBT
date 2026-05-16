@@ -55,11 +55,6 @@ main{
     justify-content: space-between;
 }
 
-main img{
-    width: 10rem;
-    height: 10rem;
-}
-
 #textInfo{
     font-size: 1.2rem;
     color: #EA2F14;
@@ -69,6 +64,7 @@ main img{
 
 #textInfo ul{
     padding: 0 2rem;
+    margin-top: 3rem;
 }
 
 #moreInfo{
@@ -88,6 +84,7 @@ main img{
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
+    margin-bottom: 3rem;
 }
 
 #moreInfo div button{

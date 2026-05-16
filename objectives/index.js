@@ -11,10 +11,16 @@ tl.from("header", {
     scale: 1.2,
     opacity: 0
 })
-.from("#textInfo", {
+.from("#textInfo p", {
     y: 150,
     duration: 0.5,
     opacity: 0
+})
+.from("#textInfo ul li", {
+    y: 150,
+    duration: 1,
+    opacity: 0,
+    stagger: 0.2
 })
 .from("footer", {
     delay: 0.5,

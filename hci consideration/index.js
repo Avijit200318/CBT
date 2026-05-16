@@ -6,10 +6,11 @@ tl.from("header", {
     duration: 1,
     opacity: 0
 }, 'a')
-.from("#textInfo", {
+.from("#textInfo ul, li", {
     y: 150,
-    duration: 0.5,
-    opacity: 0
+    duration: 1,
+    opacity: 0,
+    stagger: 0.2
 })
 .from("#moreInfo", {
     y: 100,
