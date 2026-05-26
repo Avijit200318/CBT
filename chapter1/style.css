@@ -15,7 +15,7 @@
 html, body{
     width: 100%;
     height: 100vh;
-    background: #FCEF91;
+    background: #fff;
     font-family: sans-serif;
     overflow: hidden;
 }
@@ -27,13 +27,13 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #EA2F14;
+    border-bottom: 1px solid #102542;
 }
 
 header h1{
     font-size: 3rem;
     font-family: "Iceland", sans-serif;
-    color: #EA2F14;
+    color: #102542;
 }
 
 
@@ -102,7 +102,7 @@ footer{
     position: relative;
     width: 100%;
     height: 5rem;
-    border-top: 1px solid #EA2F14;
+    border-top: 1px solid #102542;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -115,7 +115,11 @@ footer{
 footer .left, footer .right{
     display: flex;
     gap: 1rem;
-    width: 13rem;
+    width: 18rem;
+}
+
+footer .left{
+    width: 6rem;
 }
 
 footer .mid{
@@ -128,10 +132,11 @@ footer .mid{
 
 #pageNo{
     padding: 0.5rem 1rem;
-    border: 3px solid #EA2F14;
+    border: 3px solid #102542;
     width: 10rem;
     text-align: center;
     border-radius: 4rem;
+    color: #102542;
 }
 
 #pageNo p{
@@ -145,13 +150,13 @@ footer .left button, footer .right button{
     border-radius: 3rem;
     border: none;
     width: 6rem;
-    background: #EA2F14;
+    background: #102542;
     transition: 0.3s;
 }
 
 .left button i, .right button i{
     font-size: 1.5rem;
-    color: #FCEF91;
+    color: #fff;
 }
 
 footer .left button:hover, footer .right button:hover{

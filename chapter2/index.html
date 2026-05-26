@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../scrollBarStyle.css">
+    <title>The JavaScript DSA Lab</title>
+</head>
+<body>
+    <header>
+        <h1>Functions</h1>
+    </header>
+    <main>
+        <div class="left scrollbar-custom">
+            <div>
+                <h2>What are Functions?</h2>
+                <p>Functions are reusable blocks of code designed to perform specific tasks. Instead of repeating the same code multiple times, logic is wrapped in a function and "called" whenever the system requires it. This modular approach ensures the program remains organized, readable, and efficient.</p>
+        
+                <h2>How Functions Work</h2>
+                <p>A function operates as a three-part process, turning raw data into finished results:</p>
+                <ul>
+                    <li><strong>Inputs (Parameters):</strong> These act as the raw materials "fed" into the function so it has specific data to work with.</li>
+                    <li><strong>The Logic:</strong> This is the internal set of instructions that performs the actual calculation, comparison, or transformation on the input.</li>
+                    <li><strong>Outputs (Return Values):</strong> This is the final result that the function "spits out" or returns once its job is complete, allowing that data to be used elsewhere in the system.</li>            
+                </ul>
+    
+                <h2>Function Blueprints: Named vs. Arrow Functions</h2>
+                <p>In JavaScript, functions can be constructed using different syntax styles, depending on how the logic engine needs to execute them:</p>
+                <ul>
+                    <li><strong>Named Functions:</strong> Created using the traditional function keyword. These act as permanent, standard components in your system that are highly readable and can be referenced anywhere within their scope.</li>
+                    <li><strong>Arrow Functions:</strong> A modern, streamlined syntax designed for writing shorter, cleaner code. They act as "lightweight processors," making them ideal for quick, single-line operations or passing quick logic inline.</li>           
+                </ul>
+                <h2>Named Function Example</h2>
+                <pre>function calculatePower(current, voltage) {
+    return current * voltage;
+}
+
+
+console.log(calculatePower(5, 220));</pre>
+                <h2>Arrow Function Example</h2>
+                <pre>const calculatePower(current, voltage) => {
+    return current * voltage;
+}
+
+
+console.log(calculatePower(5, 220));</pre>
+                
+            </div>
+        </div>
+        <div class="right">
+            <video src="" controls poster=""></video>
+        </div>
+    </main>
+    <footer>
+        <div class="left">
+            <a href="../index.html">
+                <button><i class="fa-regular fa-house"></i></button>
+            </a>
+        </div>
+        <div class="mid">
+            <div id="pageNo">
+                <p>7 / 20</p>
+            </div>
+        </div>
+        <div class="right">
+            <a href="../target audience/index.html">
+                <button><i class="fa-regular fa-circle-left"></i></button>
+            </a>
+            <a href="./chapter 1 code editor/index.html">
+                <button><i class="fa-regular fa-circle-right"></i></button>
+            </a>
+            <button><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js" integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+    integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollSmoother.min.js"></script>
+
+<script src="./index.js"></script>
+</html>

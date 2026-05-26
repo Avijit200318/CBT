@@ -15,7 +15,7 @@
 html, body{
     width: 100%;
     height: 100vh;
-    background: #FCEF91;
+    background: #fff;
     font-family: sans-serif;
     overflow: hidden;
 }
@@ -27,13 +27,13 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #EA2F14;
+    border-bottom: 1px solid #102542;
 }
 
 header h1{
     font-size: 3rem;
     font-family: "Iceland", sans-serif;
-    color: #EA2F14;
+    color: #102542;
 }
 
 
@@ -53,25 +53,25 @@ main{
     align-items: center;
 }
 
-main .scrollbar-custom{
+main .box{
     width: 100%;
-    height: 100%;
-    padding: 2rem 0.5rem;
+    height: calc(100vh - 5rem - 5rem);
+    padding: 1rem 0.5rem;
     display: flex;
     justify-content: center;
     gap: 1rem;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 main .left, main .right{
     width: 50%;
-    height: 100vh;
-    border: 1px solid #EA2F14;
     border-radius: 20px;
+    height: 100vh;
 }
 
 main .left{
-    background: #E5D983;
+    background: #80f7bd;
     padding: 0.75rem 2rem;
 }
 
@@ -92,16 +92,17 @@ main .left{
 
 
 main .right{
-    background: #E5D983;
+    background: #80f7bd;
     padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: start;
+    height: 100vh;
     overflow: hidden;
 }
 
 #rightHead{
-    background: #FB9E3A;
+    background: #74d7a8;
     height: 6rem;
     display: flex;
     justify-content: space-between;
@@ -120,15 +121,15 @@ main .right{
 
 #rightHead div i{
     font-size: 1.2rem;
-    color: #FCEF91;
+    color: #fff;
 }
 
 #rightHead div i:nth-child(2){
-    color: #E6521F;
+    color: #80f7bd;
 }
 
 #rightHead div i:nth-child(3){
-    color: #EA2F14;
+    color: #102542;
 }
 
 #rightHead button{
@@ -138,10 +139,10 @@ main .right{
     align-items: center;
     gap: 0.5rem;
     border-radius: 20px;
-    color: #FCEF91;
+    color: #fff;
     font-family: "Iceland", sans-serif;
     font-size: 1.4rem;
-    background: #E6521F;
+    background: #102542;
     border: none;
     transition: 0.5s;
 }
@@ -154,15 +155,15 @@ main .right{
 }
 
 main .right textarea{
-    width: calc(100%-2rem);
-    height: 100vh;
+    width: calc(100% - 2rem);
+    height: 110vh;
     font-size: 1.1rem;
     line-height: 1.5rem;
     border: none;
     outline: none;
     margin: 1rem;
     resize: none;
-    background: #E5D983;
+    background: #80f7bd;
 }
 
 main .right .output{
@@ -203,7 +204,7 @@ footer{
     position: relative;
     width: 100%;
     height: 5rem;
-    border-top: 1px solid #EA2F14;
+    border-top: 1px solid #102542;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -216,7 +217,11 @@ footer{
 footer .left, footer .right{
     display: flex;
     gap: 1rem;
-    width: 13rem;
+    width: 18rem;
+}
+
+footer .left{
+    width: 6rem;
 }
 
 footer .mid{
@@ -229,10 +234,11 @@ footer .mid{
 
 #pageNo{
     padding: 0.5rem 1rem;
-    border: 3px solid #EA2F14;
+    border: 3px solid #102542;
     width: 10rem;
     text-align: center;
     border-radius: 4rem;
+    color: #102542;
 }
 
 #pageNo p{
@@ -246,13 +252,13 @@ footer .left button, footer .right button{
     border-radius: 3rem;
     border: none;
     width: 6rem;
-    background: #EA2F14;
+    background: #102542;
     transition: 0.3s;
 }
 
 .left button i, .right button i{
     font-size: 1.5rem;
-    color: #FCEF91;
+    color: #fff;
 }
 
 footer .left button:hover, footer .right button:hover{

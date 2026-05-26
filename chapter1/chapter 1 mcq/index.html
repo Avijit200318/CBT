@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../scrollBarStyle.css">
+    <title>The JavaScript DSA Lab</title>
+</head>
+
+<body>
+    <header>
+        <h1>Q & A</h1>
+    </header>
+    <main>
+        <div class="box scrollbar-custom">
+            <div class="question">
+                <h3>1. How many ways can we create variables in JavaScript?</h3>
+                <div class="options">
+                    <input type="radio" id="q1-o1" name="q1" value="1">
+                    <label for="q1-o1">1</label>
+                    <input type="radio" id="q1-o2" name="q1" value="2">
+                    <label for="q1-o2">2</label>
+                    <input type="radio" id="q1-o3" name="q1" value="3">
+                    <label for="q1-o3">3</label>
+                    <input type="radio" id="q1-o4" name="q1" value="4">
+                    <label for="q1-o4">4</label>
+                </div>
+                <button class="checkBtn" id="q1-button" onclick="checkAnswer(0)">Check</button>
+            </div>
+
+            <div class="question">
+                <h3>2. Which JavaScript keyword should be used to declare a variable representing a countdown timer that decreases every second?</h3>
+                <div class="options">
+                    <input type="radio" id="q2-o1" name="q2" value="const">
+                    <label for="q2-o1">const</label>
+                    <input type="radio" id="q2-o2" name="q2" value="let">
+                    <label for="q2-o2">let</label>
+                    <input type="radio" id="q2-o3" name="q2" value="fixed">
+                    <label for="q2-o3">fixed</label>
+                    <input type="radio" id="q2-o4" name="q2" value="static">
+                    <label for="q2-o4">static</label>
+                </div>
+                <button class="checkBtn" id="q2-button" onclick="checkAnswer(1)">Check</button>
+            </div>
+
+            <div class="question">
+                <h3>3. If you declare a variable as const <strong>SYSTEM_ID = "99X";</strong> and later attempt to write <strong>SYSTEM_ID = "100A";</strong>, what will happen according to the chapter's memory demonstration?</h3>
+                <div class="options">
+                    <input type="radio" id="q3-o1" name="q3" value="The system updates the ID seamlessly">
+                    <label for="q3-o1">The system updates the ID seamlessly</label>
+                    <input type="radio" id="q3-o2" name="q3" value="The variable automatically converts into a String type.">
+                    <label for="q3-o2">The variable automatically converts into a String type.</label>
+                    <input type="radio" id="q3-o3" name="q3" value="The system locks and blocks the action, preventing the change.">
+                    <label for="q3-o3">The system locks and blocks the action, preventing the change.</label>
+                    <input type="radio" id="q3-o4" name="q3" value="The value changes but triggers a temporary warning alert.">
+                    <label for="q3-o4">The value changes but triggers a temporary warning alert.</label>
+                </div>
+                <button class="checkBtn" id="q3-button" onclick="checkAnswer(2)">Check</button>
+            </div>
+
+            <div class="question">
+                <h3>4. Read the following line of data: <strong>"System Online"</strong>. What data type does this represent in JavaScript?</h3>
+                <div class="options">
+                    <input type="radio" id="q4-o1" name="q4" value="Boolean">
+                    <label for="q4-o1">Boolean</label>
+                    <input type="radio" id="q4-o2" name="q4" value="Number">
+                    <label for="q4-o2">Number</label>
+                    <input type="radio" id="q4-o3" name="q4" value="Locker">
+                    <label for="q4-o3">Locker</label>
+                    <input type="radio" id="q4-o4" name="q4" value="String">
+                    <label for="q4-o4">String</label>
+                </div>
+                <button class="checkBtn" id="q4-button" onclick="checkAnswer(3)">Check</button>
+            </div>
+
+            <div class="question">
+                <h3>5. Which data type acts like a simple logic gate holding only a value of True or False to determine if a system task is complete?</h3>
+                <div class="options">
+                    <input type="radio" id="q5-o1" name="q5" value="Boolean">
+                    <label for="q5-o1">Boolean</label>
+                    <input type="radio" id="q5-o2" name="q5" value="Number">
+                    <label for="q5-o2">Number</label>
+                    <input type="radio" id="q5-o3" name="q5" value="Locker">
+                    <label for="q5-o3">Locker</label>
+                    <input type="radio" id="q5-o4" name="q5" value="String">
+                    <label for="q5-o4">String</label>
+                </div>
+                <button class="checkBtn" id="q5-button" onclick="checkAnswer(4)">Check</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="left">
+            <a href="/index.html">
+                <button><i class="fa-regular fa-house"></i></button>
+            </a>
+        </div>
+        <div class="mid">
+            <div id="pageNo">
+                <p>6 / 20</p>
+            </div>
+        </div>
+        <div class="right">
+            <a href="../chapter 1 code editor/index.html">
+                <button><i class="fa-regular fa-circle-left"></i></button>
+            </a>
+            <a href="../../chapter2/index.html">
+                <button><i class="fa-regular fa-circle-right"></i></button>
+            </a>
+            <button><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"
+    integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+    integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollSmoother.min.js"></script>
+
+<script src="./index.js"></script>
+
+</html>

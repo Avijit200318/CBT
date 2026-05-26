@@ -15,7 +15,7 @@
 html, body{
     width: 100%;
     height: 100vh;
-    background: #FCEF91;
+    background: #fff;
     font-family: sans-serif;
 }
 
@@ -26,13 +26,13 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #EA2F14;
+    border-bottom: 1px solid #102542;
 }
 
 header h1{
     font-size: 3rem;
     font-family: "Iceland", sans-serif;
-    color: #EA2F14;
+    color: #102542;
 }
 
 
@@ -62,7 +62,7 @@ main img{
 
 #textInfo{
     font-size: 1.2rem;
-    color: #EA2F14;
+    color: #102542;
     line-height: 2rem;
     width: 100%;
     display: flex;
@@ -72,7 +72,7 @@ main img{
 
 #textInfo .left, #textInfo .right{
     width: 50%;
-    border: 2px solid black;
+    border: 2px solid #102542;
     padding: 2rem 1rem 1rem 1rem;
     border-radius: 10px;
     position: relative;
@@ -99,7 +99,7 @@ main img{
 #moreInfo h3{
     font-size: 1.5rem;
     font-family: "Iceland", sans-serif;
-    color: #EA2F14;
+    color: #102542;
     margin-bottom: 1.2rem;
     padding-left: 1rem;
 }
@@ -118,9 +118,9 @@ main img{
     font-family: "Iceland", sans-serif;
     font-size: 1.4rem;
     border-radius: 25px;
-    border: 2px solid #EA2F14;
-    background: #9AD872;
-    color: #EA2F14;
+    border: 2px solid #102542;
+    background: transparent;
+    color: #102542;
     font-weight: 600;
     transition: color 0.5s;
     overflow: hidden;
@@ -128,8 +128,8 @@ main img{
 }
 
 .active {
-    background: #EA2F14 !important;
-    color: #9AD872 !important;
+    background: #102542 !important;
+    color: #fff !important;
 }
 
 #moreInfo div button::before{
@@ -139,7 +139,7 @@ main img{
     height: 100%;
     top: 0;
     left: 0;
-    background: #EA2F14;
+    background: #102542;
     clip-path: circle(0%);
     transition: 0.75s;
     z-index: -1;
@@ -150,13 +150,13 @@ main img{
 }
 
 #moreInfo div button:hover{
-    color: #9AD872;
+    color: #fff;
 }
 
 footer{
     width: 100%;
     height: 5rem;
-    border-top: 1px solid #EA2F14;
+    border-top: 1px solid #102542;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -167,7 +167,11 @@ footer{
 footer .left, footer .right{
     display: flex;
     gap: 1rem;
-    width: 13rem;
+    width: 18rem;
+}
+
+footer .left{
+    width: 6rem;
 }
 
 footer .mid{
@@ -180,10 +184,11 @@ footer .mid{
 
 #pageNo{
     padding: 0.5rem 1rem;
-    border: 3px solid #EA2F14;
+    border: 3px solid #102542;
     width: 10rem;
     text-align: center;
     border-radius: 4rem;
+    color: #102542;
 }
 
 #pageNo p{
@@ -197,13 +202,13 @@ footer .left button, footer .right button{
     border-radius: 3rem;
     border: none;
     width: 6rem;
-    background: #EA2F14;
+    background: #102542;
     transition: 0.3s;
 }
 
 .left button i, .right button i{
     font-size: 1.5rem;
-    color: #FCEF91;
+    color: #fff;
 }
 
 footer .left button:hover, footer .right button:hover{

@@ -30,7 +30,7 @@ runBtn.addEventListener('click', () => {
         scrollDiv.scrollTo({
         top: scrollDiv.scrollHeight,
         behavior: 'smooth'
-  });
+        });
     } catch (error) {
         // Display errors in red
         outputDisplay.style.color = "#ff5555";
@@ -51,12 +51,12 @@ tl.from("header", {
 	duration: 1,
 	opacity: 0
 }, 'a')
-.from("main .scrollbar-custom .left", {
+.from("main .left", {
 	x: -500,
 	duration: 0.75,
 	opacity: 0
 }, 'b')
-.from("main .scrollbar-custom .right", {
+.from("main .right", {
 	x: 300,
 	duration: 0.75,
 	opacity: 0

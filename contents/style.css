@@ -46,96 +46,56 @@ a{
 }
 
 main{
-    padding: 1rem 2rem 2rem 2rem;
+    padding: 2rem;
     width: 100%;
     height: calc(100vh - 5rem - 5rem);
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-main img{
-    width: 11rem;
-    height: 10rem;
+    justify-content: center;
 }
 
 #textInfo{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #102542;
     line-height: 2rem;
-    width: 90%;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    flex-direction: column;
+    margin-top: 3rem;
 }
 
-#textInfo ul{
-    padding: 0 2rem;
+#textInfo p{
     margin-bottom: 1rem;
-    font-size: 0.9rem;
-}
-
-#moreInfo{
-    width: 70%;
-}
-
-#moreInfo h3{
-    font-size: 1.5rem;
-    font-family: "Iceland", sans-serif;
-    color: #102542;
-    margin-bottom: 1.2rem;
-    padding-left: 1rem;
-}
-
-#moreInfo div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1rem;
-}
-
-#moreInfo div button{
-    position: relative;
-    padding: 0.75rem 1.5rem;
-    width: 16rem;
-    font-family: "Iceland", sans-serif;
-    font-size: 1.4rem;
-    border-radius: 25px;
-    border: 2px solid #102542;
-    background: transparent;
-    color: #102542;
     font-weight: 600;
-    transition: color 0.5s;
-    overflow: hidden;
-    z-index: 1;
+    font-family: "Iceland", sans-serif;
+    font-size: 2.4rem;
+    margin-bottom: 2.2rem;
 }
 
-.active {
-    background: #102542 !important;
-    color: #fff !important;
+#textInfo ol{
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5rem;
 }
 
-#moreInfo div button::before{
+#textInfo ol a{
+    color: #102542;
+}
+
+#textInfo ol a li{
+    padding: 0 0.2rem;
+    position: relative;
+}
+
+#textInfo ol a li::before{
     position: absolute;
     content: "";
-    width: 100%;
+    width: 0;
     height: 100%;
-    top: 0;
-    left: 0;
-    background: #102542;
-    clip-path: circle(0%);
-    transition: 0.75s;
-    z-index: -1;
+    border-bottom: 4px solid #102542;
+    transition: 0.5s;
 }
 
-#moreInfo div button:hover::before{
-    clip-path: circle(100%);
-}
-
-#moreInfo div button:hover{
-    color: #fff;
+#textInfo ol a li:hover::before{
+    width: 100%;
 }
 
 footer{
