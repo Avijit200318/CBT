@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../scrollBarStyle.css">
+    <title>The JavaScript DSA Lab</title>
+</head>
+<body>
+    <header>
+        <h1>Array</h1>
+    </header>
+    <main>
+        <div class="left scrollbar-custom">
+            <div>
+                <h2>What is an Array?</h2>
+                <p>An array functions like a row of storage lockers where each locker is assigned a specific number, starting from zero. Instead of creating multiple individual variables for ten different items, a single array holds all of them in one organized structure.</p>
+        
+                <h2>How Arrays Work</h2>
+                <p>Interacting with these lists involves several core JavaScript methods that allow for precise data management:</p>
+
+                <ul>
+                    <li><strong>Indexing:</strong> Every item in an array has a position number known as an index. Data is retrieved by "calling" its specific number (e.g., item[0]).</li>
+                    <li><strong>Adding Data (push):</strong> This method adds a new data packet to the very end of the list, similar to a new task arriving at a processing gateway.</li>
+                    <li><strong>Removing Data (pop):</strong> This method removes the last item from the end of the list, effectively shortening the array.</li>         
+                    <li><strong>Finding Data (indexOf):</strong> This command searches the entire row to identify the exact position where a specific piece of information is located.</li>         
+                </ul>
+    
+                
+                <h2>Creating an Array & Indexing</h2>
+                <pre>
+const storageLockers = ["Data_A", "Data_B", "Data_C"];
+
+
+console.log(storageLockers[0]);
+console.log(storageLockers[2]);
+</pre>
+                <h2>Adding Data</h2>
+                <pre>const processingGateway = ["Task_1", "Task_2"];
+
+processingGateway.push("Task_3");
+
+console.log(processingGateway); 
+</pre>
+
+                <h2>Removing Data with</h2>
+                <pre>const systemQueue = ["Packet_A", "Packet_B", "Packet_C"];
+
+const removedItem = systemQueue.pop();
+
+console.log(removedItem);
+console.log(systemQueue);</pre>
+
+                <h2>Finding a Position with</h2>
+                <pre>const securityLog = ["User_10", "User_25", "User_88"];
+
+const targetIndex = securityLog.indexOf("User_25");
+
+console.log(targetIndex);</pre>
+                
+            </div>
+        </div>
+        <div class="right">
+            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/HFaxylC7bUc?si=E6liM7Hs9A2upN6P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+        </div>
+    </main>
+    <footer>
+        <div class="left">
+            <a href="../index.html">
+                <button><i class="fa-regular fa-house"></i></button>
+            </a>
+        </div>
+        <div class="mid">
+            <div id="pageNo">
+                <p>10 / 20</p>
+            </div>
+        </div>
+        <div class="right">
+            <a href="../chapter2/chapter 2 mcq/index.html">
+                <button><i class="fa-regular fa-circle-left"></i></button>
+            </a>
+            <a href="./chapter 3 code editor/index.html">
+                <button><i class="fa-regular fa-circle-right"></i></button>
+            </a>
+            <button id="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js" integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+    integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollSmoother.min.js"></script>
+
+<script src="./index.js"></script>
+<script src="../closeButton.js"></script>
+</html>
