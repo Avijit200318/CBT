@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../scrollBarStyle.css">
+    <title>The JavaScript DSA Lab</title>
+</head>
+<body>
+    <header>
+        <h1>Queue</h1>
+    </header>
+    <main>
+        <div class="left scrollbar-custom">
+            <div>
+                <h2>What is a Queue?</h2>
+                <p>A queue functions like a line of people waiting at a grocery store or a row of cars at a toll booth. In this system, the first piece of data to enter must be the first one to leave. This ensures that every task is processed in the exact order it arrived, preventing newer data from "cutting in line."</p>
+        
+                <h2>How the Queue Works</h2>
+                <p>Managing a "Service Line" in JavaScript involves two essential operations that maintain a smooth flow of information:</p>
+
+                <ul>
+                    <li><strong>Enqueue:</strong> This action adds a new data packet to the very back of the line, similar to a new customer joining a queue.</li>
+                    <li><strong>Dequeue:</strong> This action removes the item from the very front of the line, representing a completed task being sent to the processor.</li>
+                    <li><strong>Real-World Use:</strong> This logic powers everyday technology, such as printers handling a list of documents or a web server managing a high volume of incoming user requests.</li>         
+                </ul>
+    
+                
+                <h2>Initializing a Queue</h2>
+                <pre>const createQueue = () => {
+    return {
+        dataQueue: [],
+        frontIdx: 0,
+        backIdx: -1
+    };
+};</pre>
+                <h2>The Enqueue Operation</h2>
+                <pre>const enqueueElement = (queue, element) => {
+    queue.dataQueue.push(element);
+    queue.backIdx++;
+    console.log(`Enqueued: "${element}" | Back Index: ${queue.backIdx}`);
+};
+</pre>
+
+                <h2>The Dequeue Operation</h2>
+                <pre>const dequeueElement = (queue) => {
+    
+    if (queue.frontIdx > queue.backIdx) {
+        console.log("Queue Underflow: The line is empty!");
+        return null;
+    }
+
+    const removed = queue.dataQueue.shift();
+    
+    console.log(`Dequeued: "${removed}" | Remaining items: ${queue.backIdx + 1}`);
+    return removed;
+};</pre>
+
+                <h2>Print Front Element</h2>
+                <pre>const printFrontElement = (queue) => {
+    if (queue.frontIdx > queue.backIdx) {
+        console.log("The queue is empty. No front element.");
+        return;
+    }
+    
+    console.log("Front Element is:", queue.dataQueue[queue.frontIdx]);
+};</pre>
+                
+            </div>
+        </div>
+        <div class="right">
+            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/HFaxylC7bUc?si=E6liM7Hs9A2upN6P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+        </div>
+    </main>
+    <footer>
+        <div class="left">
+            <a href="../index.html">
+                <button><i class="fa-regular fa-house"></i></button>
+            </a>
+        </div>
+        <div class="mid">
+            <div id="pageNo">
+                <p>16 / 20</p>
+            </div>
+        </div>
+        <div class="right">
+            <a href="../chapter4/chapter 4 mcq/index.html">
+                <button><i class="fa-regular fa-circle-left"></i></button>
+            </a>
+            <a href="./chapter 5 code editor/index.html">
+                <button><i class="fa-regular fa-circle-right"></i></button>
+            </a>
+            <button id="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js" integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+    integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollSmoother.min.js"></script>
+
+<script src="./index.js"></script>
+<script src="../closeButton.js"></script>
+</html>

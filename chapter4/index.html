@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../scrollBarStyle.css">
+    <title>The JavaScript DSA Lab</title>
+</head>
+<body>
+    <header>
+        <h1>Stack</h1>
+    </header>
+    <main>
+        <div class="left scrollbar-custom">
+            <div>
+                <h2>What is a Stack?</h2>
+                <p>A stack operates like a vertical pile of dinner plates or a stack of books. In this environment, the system can only interact with the item at the very top. To access the bottom item, every piece of data sitting above it must be removed first.</p>
+        
+                <h2>How the Stack Works</h2>
+                <p>Managing a stack in JavaScript involves two primary actions that control the flow of data:</p>
+
+
+
+
+
+                <ul>
+                    <li><strong>Push:</strong> This operation adds a new data packet onto the very top of the stack.</li>
+                    <li><strong>Pop:</strong> This operation removes the most recent item from the top of the stack.</li>
+                    <li><strong>The "Back" Button Logic:</strong> This structure powers real-world features like a browser’s "Back" button or a text editor’s "Undo" command, where the last action taken is always the first one to be reversed.</li>         
+                </ul>
+    
+                
+                <h2>Initializing a Stack</h2>
+                <pre>const createStack = () => {
+    return {
+        bookStack: [],
+        topIdx: -1
+    };
+};
+</pre>
+                <h2>The Push Operation</h2>
+                <pre>const pushElement = (stack, element) => {
+    stack.bookStack.push(element);
+
+    stack.topIdx++;
+
+    console.log(`Pushed: "${element}"`);
+};
+</pre>
+
+                <h2>The Pop Operation</h2>
+                <pre>const popElement = (stack) => {
+
+    if (stack.topIdx === -1) {
+        console.log("Stack Underflow: The silo is empty!");
+        return null;
+    }
+
+    const removed = stack.bookStack.pop();
+    stack.topIdx--;
+
+    console.log(`Popped: "${removed}"`);
+    return removed;
+};</pre>
+
+                <h2>Print Top Element</h2>
+                <pre>const printTopElement = (stack) => {
+
+    if (stack.topIdx === -1) {
+        console.log("The stack is empty. No top element.");
+        return;
+    }
+    
+    console.log("Top Element is:", stack.bookStack[stack.topIdx]);
+};</pre>
+                
+            </div>
+        </div>
+        <div class="right">
+            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/HFaxylC7bUc?si=E6liM7Hs9A2upN6P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+        </div>
+    </main>
+    <footer>
+        <div class="left">
+            <a href="../index.html">
+                <button><i class="fa-regular fa-house"></i></button>
+            </a>
+        </div>
+        <div class="mid">
+            <div id="pageNo">
+                <p>13 / 20</p>
+            </div>
+        </div>
+        <div class="right">
+            <a href="../chapter2/chapter 2 mcq/index.html">
+                <button><i class="fa-regular fa-circle-left"></i></button>
+            </a>
+            <a href="./chapter 4 code editor/index.html">
+                <button><i class="fa-regular fa-circle-right"></i></button>
+            </a>
+            <button id="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js" integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+    integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollSmoother.min.js"></script>
+
+<script src="./index.js"></script>
+<script src="../closeButton.js"></script>
+</html>

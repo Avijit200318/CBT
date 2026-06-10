@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../scrollBarStyle.css">
+    <title>The JavaScript DSA Lab</title>
+</head>
+<body>
+    <header>
+        <h1>Live Practice</h1>
+    </header>
+    <main>
+        <div class="box scrollbar-custom">
+            <div class="left">
+                <h2>Queue Related Problem</h2>
+                <p>Your office server handles incoming print requests using a Queue structure governed by FIFO (First-In-First-Out) logic. You are given a queue system object tracking incoming documents. Your job is to add new print documents to the back of the queue, process (remove) the oldest document from the front, and check which document is currently next in line.</p>
+                <ul>
+                    <li>You are given an initial tracking object: <strong>let printerQueue = { dataQueue: [], frontIdx: 0, backIdx: -1 };</strong>.</li>
+                    <li>Enqueue three string values onto the back of the queue in this exact sequence: <strong>"Report.pdf"</strong>, <strong>"Invoice.docx"</strong>, and <strong>"Image.png"</strong>. Remember to increment <strong>backIdx</strong> each time you add a value.</li>
+                    <li>Dequeue the first item from the front of the queue using the <strong>shift()</strong> array method to process the oldest document. Remember to decrement <strong>backIdx</strong> to keep your counter aligned with the shortened array.</li>
+                    <li>Lastly, print the current front element of the queue to the console using your <strong>frontIdx</strong> tracker variable.</li>
+                </ul>
+            </div>
+            <div class="right">
+                <div id="rightHead">
+                    <div>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                    </div>
+                    <button id="runBtn"><i class="fa-solid fa-play"></i> Run</button>
+                </div>
+                <textarea spellcheck="false" id="codeInput" placeholder="Write Your Code Here..."></textarea>
+                <div class="output">
+                    <h3 class="head"><i class="fa-solid fa-terminal"></i> Code Output</h3>
+                    <pre id="showOutput">Your output will appear here...</pre>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="left">
+            <a href="/index.html">
+                <button><i class="fa-regular fa-house"></i></button>
+            </a>
+        </div>
+        <div class="mid">
+            <div id="pageNo">
+                <p>17 / 20</p>
+            </div>
+        </div>
+        <div class="right">
+            <a href="../index.html">
+                <button><i class="fa-regular fa-circle-left"></i></button>
+            </a>
+            <a href="../chapter 5 mcq/index.html">
+                <button><i class="fa-regular fa-circle-right"></i></button>
+            </a>
+            <button id="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js" integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+    integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollSmoother.min.js"></script>
+
+<script src="./index.js"></script>
+<script src="../../closeButton.js"></script>
+</html>
