@@ -78,7 +78,7 @@ main img{
 }
 
 #moreInfo{
-    width: 70%;
+    width: 100%;
 }
 
 #moreInfo h3{
@@ -90,19 +90,16 @@ main img{
 }
 
 #moreInfo div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1rem;
+    float: right;
 }
 
 #moreInfo div button{
     position: relative;
     padding: 0.75rem 1.5rem;
-    width: 16rem;
+    width: 6rem;
     font-family: "Iceland", sans-serif;
-    font-size: 1.4rem;
-    border-radius: 25px;
+    font-size: 1.2rem;
+    border-radius: 11px;
     border: 2px solid #102542;
     background: transparent;
     color: #102542;

@@ -16,7 +16,7 @@ tl.from("header", {
     duration: 0.5,
     opacity: 0
 })
-.from("#textInfo ol a li", {
+.from("#textInfo ul a li", {
     y: 150,
     duration: 1,
     opacity: 0,

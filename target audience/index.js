@@ -22,19 +22,19 @@ tl.from("header", {
     duration: 0.5
 })
 .from("#moreInfo div a:nth-child(1)", {
-    x: -200,
+    x: -300,
     opacity: 0,
-    duration: 0.5,
+    duration: 0.7,
 }, 'b')
 .from("#moreInfo div a:nth-child(2)", {
     opacity: 0,
     scale: 1.2,
-    duration: 0.5
+    duration: 0.7
 }, 'b')
 .from("#moreInfo div a:nth-child(3)", {
-    x: 200,
+    x: 300,
     opacity: 0,
-    duration: 0.5,
+    duration: 0.7,
 }, 'b')
 .from("footer", {
     delay: 0.5,

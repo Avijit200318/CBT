@@ -59,20 +59,42 @@ main{
     font-size: 1.2rem;
     color: #102542;
     line-height: 2rem;
-    width: 70%;
+    width: 90%;
 }
 
 #textInfo ul{
     padding: 0 2rem;
     margin-top: 3rem;
+    list-style: none;
+}
+
+ul li{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0.5rem 0;
+}
+
+li i{
+    font-size: 2.1rem;
+    position: relative;
+    transition: 1s;
+}
+
+li h3{
+    font-weight: 500;
+}
+
+li:hover i{
+    rotate: 360deg;
 }
 
 #moreInfo{
-    width: 70%;
+    width: 90%;
 }
 
 #moreInfo h3{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-family: "Iceland", sans-serif;
     color: #102542;
     margin-bottom: 1.2rem;
@@ -90,9 +112,9 @@ main{
 #moreInfo div button{
     position: relative;
     padding: 0.75rem 1.5rem;
-    width: 16rem;
+    width: 19rem;
     font-family: "Iceland", sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     border-radius: 25px;
     border: 2px solid #102542;
     background: transparent;

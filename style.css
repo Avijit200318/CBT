@@ -119,10 +119,10 @@ main h3, main h4{
 
 #heading{
     position: relative;
-    font-size: 5rem;
+    font-size: 4rem;
     font-family: "Iceland", sans-serif;
     color: #102542;
-    position: 1;
+    margin-top: 3rem;
     z-index: 2;
 }
 

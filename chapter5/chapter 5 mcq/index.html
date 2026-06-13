@@ -34,63 +34,96 @@
             </div>
 
             <div class="question">
-                <h3>2. What happens to the tracker index (topIdx) when a new element is successfully pushed into a stack?</h3>
+                <h3>2. What does the <strong>enqueueElement</strong> operation do in a queue system?</h3>
                 <div class="options">
                     <input type="radio" id="q2-o1" name="q2" value="const">
-                    <label for="q2-o1">It decreases by 1.</label>
+                    <label for="q2-o1">Removes the oldest item from the front.</label>
                     <input type="radio" id="q2-o2" name="q2" value="let">
-                    <label for="q2-o2">It stays completely unchanged.</label>
+                    <label for="q2-o2">Deletes the entire data array instantly.</label>
                     <input type="radio" id="q2-o3" name="q2" value="fixed">
-                    <label for="q2-o3">It increases by 1.</label>
+                    <label for="q2-o3">Adds a new element to the back of the line.</label>
                     <input type="radio" id="q2-o4" name="q2" value="static">
-                    <label for="q2-o4">It resets instantly to -1.</label>
+                    <label for="q2-o4">Inspections the active middle packet.</label>
                 </div>
                 <button class="checkBtn" id="q2-button" onclick="checkAnswer(1)">Check</button>
             </div>
 
             <div class="question">
-                <h3>3. If a stack array is initialized as empty [], what value should its tracking index (topIdx) start at?</h3>
+                <h3>3. When an element is removed using the <strong>dequeueElement</strong> operation, where is it taken from?</h3>
                 <div class="options">
                     <input type="radio" id="q3-o1" name="q3" value="The system updates the ID seamlessly">
-                    <label for="q3-o1">0</label>
+                    <label for="q3-o1">The front of the queue.</label>
                     <input type="radio" id="q3-o2" name="q3" value="The variable automatically converts into a String type.">
-                    <label for="q3-o2">1</label>
+                    <label for="q3-o2">The exact middle of the list.</label>
                     <input type="radio" id="q3-o3" name="q3" value="The system locks and blocks the action, preventing the change.">
-                    <label for="q3-o3">null</label>
+                    <label for="q3-o3">The back of the queue.</label>
                     <input type="radio" id="q3-o4" name="q3" value="The value changes but triggers a temporary warning alert.">
-                    <label for="q3-o4">-1</label>
+                    <label for="q3-o4">A random index location.</label>
                 </div>
                 <button class="checkBtn" id="q3-button" onclick="checkAnswer(2)">Check</button>
             </div>
 
             <div class="question">
-                <h3>4. Which real-world application feature relies directly on a Stack's processing logic?</h3>
+                <h3>4. In JavaScript, which array method is typically used to remove the first item from the front of a line?</h3>
                 <div class="options">
                     <input type="radio" id="q4-o1" name="q4" value="Boolean">
-                    <label for="q4-o1">A text editor's "Undo" action sequence.</label>
+                    <label for="q4-o1">push()</label>
                     <input type="radio" id="q4-o2" name="q4" value="Number">
-                    <label for="q4-o2">A video player's progress bar slider.</label>
+                    <label for="q4-o2">pop()</label>
                     <input type="radio" id="q4-o3" name="q4" value="Locker">
-                    <label for="q4-o3">Storing user login credentials in a database.</label>
+                    <label for="q4-o3">shift()</label>
                     <input type="radio" id="q4-o4" name="q4" value="String">
-                    <label for="q4-o4">Sorting a table of data by chronological date.</label>
+                    <label for="q4-o4">indexOf()</label>
                 </div>
                 <button class="checkBtn" id="q4-button" onclick="checkAnswer(3)">Check</button>
             </div>
 
             <div class="question">
-                <h3>5. What does a "Peek" or print operation do in a stack environment?</h3>
+                <h3>5. What happens to the <strong>backIdx</strong> tracker when a new data item is successfully enqueued?</h3>
                 <div class="options">
                     <input type="radio" id="q5-o1" name="q5" value="Boolean">
-                    <label for="q5-o1">It deletes the lowest structural item in the silo.</label>
+                    <label for="q5-o1">It resets directly to 0.</label>
                     <input type="radio" id="q5-o2" name="q5" value="Number">
-                    <label for="q5-o2">It views the active top element without removing it.</label>
+                    <label for="q5-o2">It decreases by 1.</label>
                     <input type="radio" id="q5-o3" name="q5" value="Locker">
-                    <label for="q5-o3">It clears the entire dataset array to prevent memory leaks.</label>
+                    <label for="q5-o3">It stays completely unchanged.</label>
                     <input type="radio" id="q5-o4" name="q5" value="String">
-                    <label for="q5-o4">It counts how many total items are remaining in the list.</label>
+                    <label for="q5-o4">It increases by 1.</label>
                 </div>
                 <button class="checkBtn" id="q5-button" onclick="checkAnswer(4)">Check</button>
+            </div>
+            <div class="submit">
+                <button id="submitBtn"><i class="fa-solid fa-check"></i> Submit</button>
+            </div>
+            <div id="result" class="hide">
+                <h3>Quize Result</h3>
+                <button id="close"><i class="fa-solid fa-xmark"></i></button>
+                <div id="pass" class="icon">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div id="fail" class="icon hide">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </div>
+                <div class="score">
+                    <div class="left">
+                        <h4>YOUR SCORE</h4>
+                        <h1 id="score-percent">100%</h1>
+                        <p>Passing Score 80%</p>
+                    </div>
+                    <div class="right">
+                        <h4>YOUR POINTS</h4>
+                        <h1 id="score-point">5</h1>
+                        <p>Passing Points 4</p>
+                    </div>
+                </div>
+                <div id="bottom">
+                    <a href="/chapter5/chapter 5 mcq/index.html">
+                        <button>Retake Quiz</button>
+                    </a>
+                    <a href="../index.html">
+                        <button>Restart Mission</button>
+                    </a>
+                </div>
             </div>
         </div>
     </main>

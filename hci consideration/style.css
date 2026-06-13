@@ -6,20 +6,21 @@
   font-style: normal;
 } */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body{
+html,
+body {
     width: 100%;
     height: 100vh;
     background: #fff;
     font-family: sans-serif;
 }
 
-header{
+header {
     width: 100%;
     height: 5rem;
     padding: 1.5rem 2rem;
@@ -29,23 +30,23 @@ header{
     border-bottom: 1px solid #102542;
 }
 
-header h1{
+header h1 {
     font-size: 3rem;
     font-family: "Iceland", sans-serif;
     color: #102542;
 }
 
 
-button{
+button {
     cursor: pointer;
 }
 
-a{
+a {
     position: relative;
     text-decoration: none;
 }
 
-main{
+main {
     padding: 1rem 2rem 2rem 2rem;
     width: 100%;
     height: calc(100vh - 5rem - 5rem);
@@ -55,12 +56,12 @@ main{
     justify-content: space-between;
 }
 
-main img{
+main img {
     width: 11rem;
     height: 10rem;
 }
 
-#textInfo{
+#textInfo {
     font-size: 1.2rem;
     color: #102542;
     line-height: 2rem;
@@ -71,22 +72,44 @@ main img{
     flex-direction: column;
 }
 
-#textInfo ul{
+#textInfo ul {
     padding: 0 2rem;
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.4rem;
-  width: 80%;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    margin-top: 4rem;
 }
 
-#moreInfo{
-    width: 70%;
+ul li {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0.5rem 0;
 }
 
-#moreInfo h3{
+li i {
+    font-size: 2.1rem;
+    position: relative;
+    transition: 1s;
+}
+
+li h3 {
+    font-weight: 500;
+}
+
+li:hover i {
+    rotate: 360deg;
+}
+
+#moreInfo {
+    width: 100%;
+}
+
+#moreInfo h3 {
     font-size: 1.5rem;
     font-family: "Iceland", sans-serif;
     color: #102542;
@@ -94,20 +117,17 @@ main img{
     padding-left: 1rem;
 }
 
-#moreInfo div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1rem;
+#moreInfo div {
+    float: right;
 }
 
-#moreInfo div button{
+#moreInfo div button {
     position: relative;
     padding: 0.75rem 1.5rem;
-    width: 16rem;
+    width: 6rem;
     font-family: "Iceland", sans-serif;
-    font-size: 1.4rem;
-    border-radius: 25px;
+    font-size: 1.2rem;
+    border-radius: 11px;
     border: 2px solid #102542;
     background: transparent;
     color: #102542;
@@ -122,7 +142,7 @@ main img{
     color: #fff !important;
 }
 
-#moreInfo div button::before{
+#moreInfo div button::before {
     position: absolute;
     content: "";
     width: 100%;
@@ -135,15 +155,15 @@ main img{
     z-index: -1;
 }
 
-#moreInfo div button:hover::before{
+#moreInfo div button:hover::before {
     clip-path: circle(100%);
 }
 
-#moreInfo div button:hover{
+#moreInfo div button:hover {
     color: #fff;
 }
 
-footer{
+footer {
     width: 100%;
     height: 5rem;
     border-top: 1px solid #102542;
@@ -154,17 +174,18 @@ footer{
     padding: 1rem 1.5rem;
 }
 
-footer .left, footer .right{
+footer .left,
+footer .right {
     display: flex;
     gap: 1rem;
     width: 18rem;
 }
 
-footer .left{
+footer .left {
     width: 6rem;
 }
 
-footer .mid{
+footer .mid {
     width: calc(100% - 26rem);
     height: 100%;
     display: flex;
@@ -172,7 +193,7 @@ footer .mid{
     align-items: center;
 }
 
-#pageNo{
+#pageNo {
     padding: 0.5rem 1rem;
     border: 3px solid #102542;
     width: 10rem;
@@ -181,13 +202,14 @@ footer .mid{
     color: #102542;
 }
 
-#pageNo p{
+#pageNo p {
     font-family: "Iceland", sans-serif;
     font-size: 1.7rem;
     font-weight: 600;
 }
 
-footer .left button, footer .right button{
+footer .left button,
+footer .right button {
     padding: 0.75rem 1rem;
     border-radius: 3rem;
     border: none;
@@ -196,11 +218,13 @@ footer .left button, footer .right button{
     transition: 0.3s;
 }
 
-.left button i, .right button i{
+.left button i,
+.right button i {
     font-size: 1.5rem;
     color: #fff;
 }
 
-footer .left button:hover, footer .right button:hover{
+footer .left button:hover,
+footer .right button:hover {
     transform: scale(1.1);
 }
