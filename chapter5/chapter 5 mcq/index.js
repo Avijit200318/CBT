@@ -85,6 +85,7 @@ const checkAnswer = (idx) => {
 
 // show restult
 const submitBtn = document.querySelector("#submitBtn");
+const passText = document.getElementById("passText")
 
 submitBtn.addEventListener('click', () => {
 	result.classList.add("show");
@@ -99,10 +100,18 @@ submitBtn.addEventListener('click', () => {
 		passLogo.classList.remove("hide");
 		failLogo.classList.add("hide");
 		bottomBtns.classList.add("hide");
+		passText.classList.remove("hide");
+
+		confetti({
+                particleCount: 250,
+                spread: 120,
+                origin: { y: 0.6 }
+        });
 	}else{
 		passLogo.classList.add("hide");
 		failLogo.classList.remove("hide");
 		bottomBtns.classList.remove("hide");
+		passText.classList.add("hide");
 	}
 })
 

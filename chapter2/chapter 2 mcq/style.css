@@ -146,6 +146,7 @@ main .box{
     width: 10rem;
     border-radius: 10px;
     border: 3px solid #0b182c;
+    background: white;
     color: #0b182c;
     transition: 0.5s;
 }
@@ -273,6 +274,12 @@ main .box{
 
 .show{
     top: 50% !important
+}
+
+#passText{
+    margin-top: 1rem;
+    color: #1a851a;
+    font-size: 1.3rem;
 }
 
 footer{
