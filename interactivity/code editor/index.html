@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../scrollBarStyle.css">
+    <title>The JavaScript DSA Lab</title>
+</head>
+<body>
+    <header>
+        <h1>Final Coding Assessment</h1>
+    </header>
+    <main>
+        <div class="box scrollbar-custom">
+            <div id="resultText" class="hide">
+                <div><button id="resCloseBtn"><i class="fa-solid fa-xmark"></i></button></div>
+                <h3>Congratulations! You have completed the coding round.</h3>
+            </div>
+            <div class="left">
+                <h2>Problem</h2>
+                <p>Your application monitors a temperature sensor that records data hourly into an array. To keep the data clean, you need to fix an incorrect reading, add a new reading, discard a trailing faulty data packet, and locate the exact position of a specific baseline temperature.</p>
+                <ul>
+                    <li>You are given a starting data log array: <strong>let tempLogs = [18, 22, 14, 25, 12];</strong>.</li>
+                    <li>Modify Data: Access the third item in the array (index <strong>2</strong>) and change its value to <strong>16</strong>.</li>
+                    <li>Add Data: Use an array method to add a new temperature reading of <strong>20</strong> to the end of the array.</li>
+                    <li>Remove Data: Use an array method to remove the last item from the array and store it in a variable called <strong>discardedReading</strong>.</li>
+                    <li>Find Data: Find the index position of the temperature value <strong>22</strong> and store it in a variable called <strong>baselineIndex</strong>.</li>
+                    <li>Lastly, print three things to the console: the final <strong>tempLogs</strong> array, the <strong>discardedReading</strong> variable, and the <strong>baselineIndex</strong> variable.</li>
+                </ul>
+
+            </div>
+            <div class="right">
+                <div id="rightHead">
+                    <div>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                    </div>
+                    <button id="runBtn"><i class="fa-solid fa-play"></i> Run</button>
+                </div>
+                <textarea spellcheck="false" id="codeInput" placeholder="Write Your Code Here..."></textarea>
+                <div class="output">
+                    <h3 class="head"><i class="fa-solid fa-terminal"></i> Code Output</h3>
+                    <pre id="showOutput">Your output will appear here...</pre>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="left">
+            <a href="/index.html">
+                <button><i class="fa-regular fa-house"></i></button>
+            </a>
+        </div>
+        <div class="mid">
+            <div id="pageNo">
+                <p>19 / 20</p>
+            </div>
+        </div>
+        <div class="right">
+            <a href="../../chapter5/chapter 5 mcq/index.html">
+                <button><i class="fa-regular fa-circle-left"></i></button>
+            </a>
+            <a href="../mcq/index.html">
+                <button><i class="fa-regular fa-circle-right"></i></button>
+            </a>
+            <button id="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js" integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+    integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollSmoother.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+<script src="./index.js"></script>
+<script src="../../closeButton.js"></script>
+</html>

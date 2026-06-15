@@ -17,6 +17,7 @@ html, body{
     height: 100vh;
     background: #fff;
     font-family: sans-serif;
+    overflow: hidden;
 }
 
 header{
@@ -46,122 +47,188 @@ a{
 }
 
 main{
-    padding: 1rem 2rem 2rem 2rem;
     width: 100%;
     height: calc(100vh - 5rem - 5rem);
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
 }
 
-main img{
-    width: 11rem;
-    height: 10rem;
-}
-
-#textInfo{
-    font-size: 1.2rem;
-    color: #102542;
-    line-height: 2rem;
-    width: 90%;
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
-}
-
-#textInfo ul{
-    margin-top: 2rem;
-    padding: 0 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    list-style: none;
-}
-
-ul li{
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    padding: 0.5rem 0;
-}
-
-li i{
-    font-size: 2.1rem;
-    position: relative;
-    transition: 1s;
-}
-
-h3 i:nth-of-type(2){
-    font-size: 1.8rem;
-}
-
-li h3{
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-#moreInfo{
+main .box{
     width: 100%;
-}
-
-#moreInfo h3{
-    font-size: 1.5rem;
-    font-family: "Iceland", sans-serif;
-    color: #102542;
-    margin-bottom: 1.2rem;
-    padding-left: 1rem;
-}
-
-#moreInfo div{
-    float: right;
-}
-
-#moreInfo div button{
+    height: calc(100vh - 5rem - 5rem);
+    padding: 1rem 0.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    overflow-x: hidden;
+    overflow-y: auto;
     position: relative;
-    padding: 0.75rem 1.5rem;
-    width: 6rem;
-    font-family: "Iceland", sans-serif;
-    font-size: 1.2rem;
-    border-radius: 11px;
-    border: 2px solid #102542;
-    background: transparent;
-    color: #102542;
-    font-weight: 600;
-    transition: color 0.5s;
-    overflow: hidden;
-    z-index: 1;
 }
 
-.active {
-    background: #102542 !important;
-    color: #fff !important;
-}
-
-#moreInfo div button::before{
+#resultText{
     position: absolute;
-    content: "";
+    width: 60%;
+    padding: 1rem 1rem 2rem 1rem;
+    background: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    text-align: center;
+    color: #2baf2b;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 5;
+}
+
+#resultText div{
     width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: #102542;
-    clip-path: circle(0%);
-    transition: 0.75s;
-    z-index: -1;
+    height: auto;
+    display: flex;
+    justify-content: end;
 }
 
-#moreInfo div button:hover::before{
-    clip-path: circle(100%);
+.hide{
+    display: none !important;
 }
 
-#moreInfo div button:hover{
+main .left, main .right{
+    width: 50%;
+    border-radius: 20px;
+    height: 100vh;
+}
+
+main .left{
+    background: #80f7bd;
+    padding: 0.75rem 2rem;
+}
+
+.left h2{
+    font-size: 2.2rem;
+    font-family: "Iceland", sans-serif;
+    margin: 1rem 0
+}
+
+.left ul{
+    font-size: 1.1rem;
+    padding-left: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+main .right{
+    background: #80f7bd;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#rightHead{
+    background: #74d7a8;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+#rightHead div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    overflow: hidden;
+}
+
+#rightHead div i{
+    font-size: 1.2rem;
     color: #fff;
 }
 
+#rightHead div i:nth-child(2){
+    color: #80f7bd;
+}
+
+#rightHead div i:nth-child(3){
+    color: #102542;
+}
+
+#rightHead button{
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 20px;
+    color: #fff;
+    font-family: "Iceland", sans-serif;
+    font-size: 1.4rem;
+    background: #102542;
+    border: none;
+    transition: 0.5s;
+}
+
+#runBtn:hover{
+    transform: scale(1.05);
+}
+#rightHead button i{
+    font-size: 1rem;
+}
+
+main .right textarea{
+    width: calc(100% - 2rem);
+    height: 110vh;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    border: none;
+    outline: none;
+    margin: 1rem;
+    resize: none;
+    background: #80f7bd;
+}
+
+main .right .output{
+    width: 100%;
+    height: 30rem;
+    background: black;
+    color: white;
+    padding: 0;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.output .head{
+    width: 100%;
+    height: 3rem;
+    background: #222222;
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+    font-weight: 500;
+}
+
+.output .head i{
+    padding-right: 2rem;
+}
+
+#showOutput{
+    width: 100%;
+    height: calc(100% - 3rem);
+    padding: 1rem 0.75rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.3rem;
+}
+
 footer{
+    position: relative;
     width: 100%;
     height: 5rem;
     border-top: 1px solid #102542;
@@ -170,6 +237,8 @@ footer{
     align-items: center;
     gap: 1rem;
     padding: 1rem 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 10;
 }
 
 footer .left, footer .right{

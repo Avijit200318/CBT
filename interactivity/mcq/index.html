@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../scrollBarStyle.css">
+    <title>The JavaScript DSA Lab</title>
+</head>
+
+<body>
+    <header>
+        <h1>Final Assessment Q & A</h1>
+    </header>
+    <main>
+        <div class="box scrollbar-custom">
+            <div class="question">
+                <h3>1. How many ways can we create variables in JavaScript?</h3>
+                <div class="options">
+                    <input type="radio" id="q1-o1" name="q1" value="1">
+                    <label for="q1-o1">1</label>
+                    <input type="radio" id="q1-o2" name="q1" value="2">
+                    <label for="q1-o2">2</label>
+                    <input type="radio" id="q1-o3" name="q1" value="3">
+                    <label for="q1-o3">3</label>
+                    <input type="radio" id="q1-o4" name="q1" value="4">
+                    <label for="q1-o4">4</label>
+                </div>
+                <button class="checkBtn" id="q1-button" onclick="checkAnswer(0)">Check</button>
+            </div>
+
+            <div class="question">
+                <h3>2. Which variable declaration keyword should be used if the reference to the stored data structure
+                    must remain completely constant and un-reassigned?</h3>
+                <div class="options">
+                    <input type="radio" id="q2-o1" name="q2" value="const">
+                    <label for="q2-o1">const</label>
+                    <input type="radio" id="q2-o2" name="q2" value="let">
+                    <label for="q2-o2">let</label>
+                    <input type="radio" id="q2-o3" name="q2" value="var">
+                    <label for="q2-o3">var</label>
+                    <input type="radio" id="q2-o4" name="q2" value="global">
+                    <label for="q2-o4">global</label>
+                </div>
+                <button class="checkBtn" id="q2-button" onclick="checkAnswer(1)">Check</button>
+            </div>
+
+            <div class="question">
+                <h3>3. What is the primary operational difference between a Stack and a Queue?</h3>
+                <div class="options">
+                    <input type="radio" id="q3-o1" name="q3" value="A">
+                    <label for="q3-o1">Stacks use LIFO logic while Queues use FIFO logic.</label>
+                    <input type="radio" id="q3-o2" name="q3" value="B">
+                    <label for="q3-o2">Stacks use FIFO logic while Queues use LIFO logic.</label>
+                    <input type="radio" id="q3-o3" name="q3" value="C">
+                    <label for="q3-o3">Stacks are non-linear data structures while Queues are linear.</label>
+                    <input type="radio" id="q3-o4" name="q3" value="D">
+                    <label for="q3-o4">Queues store strings but Stacks can only store numbers.</label>
+                </div>
+                <button class="checkBtn" id="q3-button" onclick="checkAnswer(2)">Check</button>
+            </div>
+
+            <div class="question">
+                <h3>4. If an array is initialized as empty, what tracking index value signifies a Stack Underflow
+                    condition?</h3>
+                <div class="options">
+                    <input type="radio" id="q4-o1" name="q4" value="0">
+                    <label for="q4-o1">0</label>
+                    <input type="radio" id="q4-o2" name="q4" value="1">
+                    <label for="q4-o2">1</label>
+                    <input type="radio" id="q4-o3" name="q4" value="null">
+                    <label for="q4-o3">null</label>
+                    <input type="radio" id="q4-o4" name="q4" value="-1">
+                    <label for="q4-o4">-1</label>
+                </div>
+                <button class="checkBtn" id="q4-button" onclick="checkAnswer(3)">Check</button>
+            </div>
+
+            <div class="question">
+                <h3>5. In a custom Queue tracking indices manually, what happens to the 'backIdx' pointer during an
+                    enqueue operation?</h3>
+                <div class="options">
+                    <input type="radio" id="q5-o1" name="q5" value="decrease">
+                    <label for="q5-o1">It decreases by 1.</label>
+                    <input type="radio" id="q5-o2" name="q5" value="unchanged">
+                    <label for="q5-o2">It stays completely unchanged.</label>
+                    <input type="radio" id="q5-o3" name="q5" value="increase">
+                    <label for="q5-o3">It increases by 1.</label>
+                    <input type="radio" id="q5-o4" name="q5" value="reset">
+                    <label for="q5-o4">It resets instantly back to 0.</label>
+                </div>
+                <button class="checkBtn" id="q5-button" onclick="checkAnswer(4)">Check</button>
+            </div>
+
+            <div class="question">
+                <h3>6. Which native JavaScript Array method removes the first element from index 0 and dynamically
+                    shifts all remaining items forward?</h3>
+                <div class="options">
+                    <input type="radio" id="q6-o1" name="q6" value="pop">
+                    <label for="q6-o1">pop()</label>
+                    <input type="radio" id="q6-o2" name="q6" value="shift">
+                    <label for="q6-o2">shift()</label>
+                    <input type="radio" id="q6-o3" name="q6" value="push">
+                    <label for="q6-o3">push()</label>
+                    <input type="radio" id="q6-o4" name="q6" value="unshift">
+                    <label for="q6-o4">unshift()</label>
+                </div>
+                <button class="checkBtn" id="q6-button" onclick="checkAnswer(5)">Check</button>
+            </div>
+
+            <div class="question">
+                <h3>7. What value will the variable 'position' hold after running this code snippet?
+                    <br><br><code>let logs = ['alpha', 'beta', 'gamma'];<br>let position = logs.indexOf('beta');</code>
+                </h3>
+                <div class="options">
+                    <input type="radio" id="q7-o1" name="q7" value="1">
+                    <label for="q7-o1">1</label>
+                    <input type="radio" id="q7-o2" name="q7" value="2">
+                    <label for="q7-o2">2</label>
+                    <input type="radio" id="q7-o3" name="q7" value="0">
+                    <label for="q7-o3">0</label>
+                    <input type="radio" id="q7-o4" name="q7" value="-1">
+                    <label for="q7-o4">-1</label>
+                </div>
+                <button class="checkBtn" id="q7-button" onclick="checkAnswer(6)">Check</button>
+            </div>
+
+            <div class="question">
+                <h3>8. Why are functions critical when organizing complex data processing structures?</h3>
+                <div class="options">
+                    <input type="radio" id="q8-o1" name="q8" value="A">
+                    <label for="q8-o1">They allow code to be written as a single, long script without blocks.</label>
+                    <input type="radio" id="q8-o2" name="q8" value="B">
+                    <label for="q8-o2">They enforce fixed data types on variables automatically.</label>
+                    <input type="radio" id="q8-o3" name="q8" value="C">
+                    <label for="q8-o3">They create modular, reusable logic units that avoid repeating code.</label>
+                    <input type="radio" id="q8-o4" name="q8" value="D">
+                    <label for="q8-o4">They optimize memory by converting arrays into primitive values.</label>
+                </div>
+                <button class="checkBtn" id="q8-button" onclick="checkAnswer(7)">Check</button>
+            </div>
+
+            <div class="question">
+                <h3>9. Which feature of an application relies directly on a Stack's native operational flow?</h3>
+                <div class="options">
+                    <input type="radio" id="q9-o1" name="q9" value="A">
+                    <label for="q9-o1">The sequential 'Undo' history chain in a text editor.</label>
+                    <input type="radio" id="q9-o2" name="q9" value="B">
+                    <label for="q9-o2">The auto-save file system background timer.</label>
+                    <input type="radio" id="q9-o3" name="q9" value="C">
+                    <label for="q9-o3">The syntax highlighter color scheme engine.</label>
+                    <input type="radio" id="q9-o4" name="q9" value="D">
+                    <label for="q9-o4">Sorting a document's words alphabetically.</label>
+                </div>
+                <button class="checkBtn" id="q9-button" onclick="checkAnswer(8)">Check</button>
+            </div>
+
+            <div class="question">
+                <h3>10. What condition occurs if a queue's 'frontIdx' pointer dynamically climbs to a value greater than
+                    its 'backIdx' pointer?</h3>
+                <div class="options">
+                    <input type="radio" id="q10-o1" name="q10" value="overflow">
+                    <label for="q10-o1">Queue Overflow</label>
+                    <input type="radio" id="q10-o2" name="q10" value="underflow">
+                    <label for="q10-o2">Queue Underflow</label>
+                    <input type="radio" id="q10-o3" name="q10" value="optimization">
+                    <label for="q10-o3">Array Boundary Optimization</label>
+                    <input type="radio" id="q10-o4" name="q10" value="corruption">
+                    <label for="q10-o4">Index Pointer Corruption</label>
+                </div>
+                <button class="checkBtn" id="q10-button" onclick="checkAnswer(9)">Check</button>
+            </div>
+            <div class="submit">
+                <button id="submitBtn"><i class="fa-solid fa-check"></i> Submit</button>
+            </div>
+            <div id="result" class="hide">
+                <h3>Quize Result</h3>
+                <button id="close"><i class="fa-solid fa-xmark"></i></button>
+                <div id="pass" class="icon">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div id="fail" class="icon hide">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </div>
+                <div class="score">
+                    <div class="left">
+                        <h4>YOUR SCORE</h4>
+                        <h1 id="score-percent">100%</h1>
+                        <p>Passing Score 80%</p>
+                    </div>
+                    <div class="right">
+                        <h4>YOUR POINTS</h4>
+                        <h1 id="score-point">5</h1>
+                        <p>Passing Points 8</p>
+                    </div>
+                </div>
+                <div id="bottom">
+                    <a href="/chapter1/chapter 1 mcq/index.html">
+                        <button>Retake Quiz</button>
+                    </a>
+                    <a href="../index.html">
+                        <button>Restart Mission</button>
+                    </a>
+                </div>
+                <h4 id="passText">Congratulations! You have completed the final Q & A round.</h4>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="left">
+            <a href="/index.html">
+                <button><i class="fa-regular fa-house"></i></button>
+            </a>
+        </div>
+        <div class="mid">
+            <div id="pageNo">
+                <p>20 / 20</p>
+            </div>
+        </div>
+        <div class="right">
+            <a href="../chapter 1 code editor/index.html">
+                <button><i class="fa-regular fa-circle-left"></i></button>
+            </a>
+            <a href="../../chapter2/index.html">
+                <button><i class="fa-regular fa-circle-right"></i></button>
+            </a>
+            <button id="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"
+    integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+    integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollSmoother.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+<script src="./index.js"></script>
+<script src="../../closeButton.js"></script>
+
+</html>
