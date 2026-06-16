@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=BioRhyme:wght@200..800&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Great+Vibes&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Iceland&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Yellowtail&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* .iceland-regular {
+  font-family: "Iceland", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    font-family: sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 5rem;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #102542;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-family: "Iceland", sans-serif;
+    color: #102542;
+}
+
+
+button {
+    cursor: pointer;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #102542;
+}
+
+main div h2 {
+    font-size: 2.8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #102542;
+}
+
+main .top{
+    width: 70%;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  line-height: 2.4rem;
+}
+
+main .bottom{
+    margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom p{
+    font-size: 3rem;
+}
+
+.bottom button{
+    margin-top: 4rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background: #102542;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  height: 3rem;
+    font-weight: 600;
+}
+
+#textInfo {
+    font-size: 1.3rem;
+    color: #102542;
+    line-height: 2rem;
+    margin-top: 3rem;
+}
+
+#textInfo p {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-family: "Iceland", sans-serif;
+    font-size: 2.4rem;
+    margin-bottom: 2.2rem;
+}
+
+#textInfo ul {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    gap: 1.9rem;
+    padding: 0.5rem 0;
+}
+
+li i {
+    font-size: 2.2rem;
+    position: relative;
+    transition: 1s;
+}
+
+li h3 {
+    position: relative;
+    font-weight: 500;
+}
+
+li:hover i {
+    rotate: 360deg;
+}
+
+#textInfo ul a {
+    color: #102542;
+}
+
+li h3::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 100%;
+    border-bottom: 4px solid #102542;
+    transition: 0.5s;
+}
+
+#textInfo ul a li h3:hover::before {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 5rem;
+    border-top: 1px solid #102542;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+}
+
+footer .left,
+footer .right {
+    display: flex;
+    gap: 1rem;
+    width: 18rem;
+}
+
+footer .left {
+    width: 6rem;
+}
+
+footer .mid {
+    width: calc(100% - 26rem);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pageNo {
+    padding: 0.5rem 1rem;
+    border: 3px solid #102542;
+    width: 10rem;
+    text-align: center;
+    border-radius: 4rem;
+    color: #102542;
+}
+
+#pageNo p {
+    font-family: "Iceland", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+footer .left button,
+footer .right button {
+    padding: 0.75rem 1rem;
+    border-radius: 3rem;
+    border: none;
+    width: 6rem;
+    background: #102542;
+    transition: 0.3s;
+}
+
+.left button i,
+.right button i {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+footer .left button:hover,
+footer .right button:hover {
+    transform: scale(1.1);
+}
